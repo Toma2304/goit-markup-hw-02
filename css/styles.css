@@ -1,4 +1,3 @@
-
 /* Основной цвет  #212121 */
 /* Вторичный цвет   #757575 */
 /* Белый #FFFFFF */
@@ -6,14 +5,16 @@
 /* Ссылки (футер) gba(255, 255, 255, 0.6) */
 /* БГ(темный) #2F303A */
 /* БГ(светлый) #F5F4FA */
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --secondary-text-color: gba(255, 255, 255, 0.6);
+
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
-
+    --footer-bg-color: #2F303A;
 }
 
 
@@ -21,7 +22,7 @@
     list-style: none;
 }
 
-.page {
+body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
 
@@ -105,6 +106,8 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+
+    cursor: pointer;
 }
 
 
@@ -169,19 +172,30 @@
     text-decoration: none;
 }
 
+.contacts-footer .link:hover, 
+.contacts-footer .link:focus, 
+.contacts-footer .address:hover, 
+.contacts-footer .address:focus {
+    color: var(--accent-color);
+}
+
 /* Portfolio */
 
 .portfolio-filter .button {
     color: var(--title-text-color);
     background-color: var(--secondary-bg-color);
 
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+
+    cursor: pointer;
 }
 
-.portfolio-filter .button:hover, .portfolio-filter .button:focus {
+.portfolio-filter .button:hover, 
+.portfolio-filter .button:focus {
     color: var(--primary-bg-color);
     background-color: var(--accent-color);
 }
