@@ -10,7 +10,7 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
-    --secondary-text-color: gba(255, 255, 255, 0.6);
+    --secondary-text-color: rgba(255, 255, 255, 0.6);
 
     --primary-bg-color: #FFFFFF;
     --secondary-bg-color: #F5F4FA;
@@ -119,7 +119,7 @@ body {
     color: var(--title-text-color);
 
     font-weight: 700;
-    size: 14px;
+    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 
